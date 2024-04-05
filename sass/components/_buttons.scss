@@ -63,6 +63,21 @@
     }
 }
 
+.read-moreBtn {
+    width: 176px;
+    height: 44px;
+    border: none;
+    border-radius: 22px;
+    color: var(--brandColor);
+    background-color: var(--mainColor);
+
+    &:hover,
+    :focus {
+        background-color: var(--hoverBuyBtn);
+        animation: scale-up-center 1s linear infinite;
+    }
+}
+
 // animation for buyBtn
 @keyframes scale-up-center {
     0% {
