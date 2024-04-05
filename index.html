@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IceCream</title>
+    <!-- MODERN NORMALIZE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+    crossorigin="anonymous">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">    
+    <!-- ANIMATE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./sass/main.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+
+            <!-- LOGO -->
+            <a class="logo link" href="./index.html" aria-label="logo">
+                <svg class="icon-logo icon-logo-animation">
+                    <use href="./images/sprite.svg#icon-logo"></use>
+                </svg>
+            </a>
+                <span class="logo-text icecreamText-animation">ICE CREAM</span>
+    
+            <!-- NAVIGATION -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link link" href="#">About us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link link" href="#">How it's made?</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link link" href="#products">Our products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- BURGER MENU -->
+            <button class="burger-menuBtn" type="button" aria-label="burger-menuBt" data-menu-open>
+                <svg class="icon-burger-menu">
+                    <use href="./images/sprite.svg#icon-burger-menu"></use>
+                </svg>
+            </button>
+
+            <!-- BUY BUTTON -->
+            <button class="buyBtn" type="button" data-modal-open>Buy now
+                <svg class="icon-readMore">
+                    <use href="./images/sprite.svg#icon-readMore"></use>
+                </svg>
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+
+                <!-- CIRCLE IMAGE -->
+                <div class="circle"></div>
+
+                <!-- MAIN HEADER -->
+                <div class="hero-passion">
+                    <h1 class="hero-title">Ice Cream Made with
+                        <span class="highlighted-word">Passion</span>
+                    </h1>
+    
+                    <!-- PRODUCTS & HOW IT'S MADE BUTTONS -->
+                    <ul class="heroBtn__list">
+                        <li class="heroBtn__item">
+                            <a class="productsBtn">Products</a>
+                        </li>
+                        <li class="heroBtn__item">
+                            <a class="how-its-madeBtn">How it's made?</a>
+                        </li>
+                    </ul>
+                        
+                    <!-- ECO-BIO -->
+                    <div class="eco">
+                        <picture>
+                            <source 
+                            srcset="/images/desktop/hero/milk_desktop@1x.png 1x, /images/desktop/hero/milk_desktop@2x.png 2x"
+                            media="(min-width:1200px)"
+                            type="image/png">
+                            <source 
+                            srcset="/images/tablet/hero/milk_tablet@1x.png 1x, /images/tablet/hero/milk_tablet@2x.png 2x"
+                            media="(min-width:768px)"
+                            type="image/png">
+                            <img 
+                            class="eco-img" 
+                            src="/images/tablet/hero/milk_tablet@1x.png" 
+                            alt="milk">
+                        </picture>
+                        
+                        <p class="eco-text">
+                            <span style="--d: 0s;">Lorem ipsum dolor sit amet,</span>
+                            <span style="--d: .1s;">consectetur adipiscing elit,</span>
+                            <span style="--d: .2s;">sed do eiusmod tempor</span>
+                            <span style="--d: .3s;">incididunt ut labore et</span>
+
+                            <!-- MORE BUTTON -->
+                            <button class="moreBtn" aria-label="moreBtn">
+                                <svg class="icon-moreBtn">
+                                    <use href="./images/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ICE CREAM IMAGE -->
+                <picture>
+                    <source 
+                    srcset="/images/desktop/hero/ice_desktop@1x.png 1x, /images/desktop/hero/ice_desktop@2x.png 2x"
+                    media="(min-width:1200px)"
+                    type="image/png">
+                    <source 
+                    srcset="/images/tablet/hero/ice_tablet@1x.png 1x, /images/tablet/hero/ice_tablet@2x.png 2x"
+                    media="(min-width:768px)"
+                    type="image/png">
+                    <source 
+                    srcset="/images/mobile/hero/ice_mobile@1x.png 1x, /images/mobile/hero/ice_mobile@2x.png 2x"
+                    media="(min-width:320px)"
+                    type="image/png">
+                    <img 
+                    class="ice-cream" 
+                    src="/images/mobile/hero/ice_mobile@1x.png" 
+                    alt="ice cream">
+                </picture>
+
+                <!-- COUNTER -->
+                <div class="counter">
+                    <p class="counter-number">16</p>
+                    <p class="counter-name1">cafes</p>
+                    <p class="counter-number">23</p>
+                    <p class="counter-name2">food truck</p>
+                </div>
+                
+                <!-- TASTY IMAGE -->
+                <picture>
+                    <source 
+                    srcset="/images/desktop/hero/tasty_desktop@1x.png 1x, /images/desktop/hero/tasty_desktop@2x.png 2x"
+                    media="(min-width:1200px)"
+                    type="image/png">
+                    <source 
+                    srcset="/images/tablet/hero/tasty_tablet@1x.png 1x, /images/tablet/hero/tasty_tablet@2x.png 2x"
+                    media="(min-width:768px)"
+                    type="image/png">
+                    <img 
+                    class="tasty-img" 
+                    src="/images/desktop/hero/tasty_desktop@1x.png" 
+                    alt="girl with ice cream">
+                </picture>
+                
+            </div>
+        </section>
+
+        <!-- OUR PRODUCTS -->
+        <section class="our-products section" id="products">
+            <div class="container">
+
+                <h2 class="section-title section-title-animation">100% Natural
+                    <span class="highlighted-word highlighted-word-section">Products</span>
+                </h2>
+                
+                <ul class="products__list">
+                    <li class="products__item">
+                        <h3 class="product-name">Ice Cream</h3>
+                        <p class="product-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                        <button class="moreBtn" aria-label="moreBtn">
+                            <svg class="icon-moreBtn">
+                                <use href="./images/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="products__item">
+                        <h3 class="product-name">Ice Coffee</h3>
+                        <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                        <button class="moreBtn" aria-label="moreBtn">
+                            <svg class="icon-moreBtn">
+                                <use href="./images/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="products__item">
+                        <h3 class="product-name">Milkshakes</h3>
+                        <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                        <button class="moreBtn" aria-label="moreBtn">
+                            <svg class="icon-moreBtn">
+                                <use href="./images/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+</html>

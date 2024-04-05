@@ -1,0 +1,240 @@
+.hero {
+    background-color: var(--headerBg);
+}
+
+.hero .container {
+    position: relative;
+    display: flex;  
+    width: 1280px;
+}
+
+.hero-passion {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    width: 218px;
+    padding-top: 137px;
+    }
+
+.heroBtn__list {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    gap: 8px;
+    padding: 20px 0 160px 0;
+}
+
+.heroBtn__item {
+    height: 24px;
+}
+
+.productsBtn,
+.how-its-madeBtn {
+    padding: 7px 14px;
+}
+
+.circle {
+    position: absolute;
+    width: 346px;
+    height: 344px;
+    background-color: var(--circleColor);
+    border-radius: 50%;
+    transition: color-change-2x 2s linear infinite alternate both;
+    animation: showRight 3s, pulsation 2s linear 3s;
+    animation: pulsate-fwd 0.5s ease-in-out infinite both;
+    z-index: 0;
+    top: 27px;
+    left: 36px;
+}
+
+.ice-cream {
+    position: absolute;
+    bottom: 0;
+    left: 123px;
+    z-index: 1;
+    animation: flip-in-ver-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1ms both;
+}
+
+.eco,
+.counter,
+.tasty-img {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-title {
+        width: 162px;
+        padding-top: 15px;
+        }
+
+    .heroBtn__list {
+        padding: 20px 0;
+    }
+
+    .circle {
+        position: absolute;
+        width: 324px;
+        height: 324px;
+        top: -56px;
+        left: 307px;
+    }
+
+    .ice-cream {
+        position: absolute;
+        bottom: 0;
+        left: 378px;
+        width: 143px;
+        height: 336px;
+    }
+
+    .eco,
+    .counter,
+    .tasty-img {
+        display: flex;
+    }
+
+    .eco-img {
+        width: 124px;
+        height: 126px;
+        margin-bottom: 28px;
+        animation: roll-in-blurred-left 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.2s both;
+    }
+
+    .eco-text {
+        width: 114px;
+        padding-top: 47px;
+    }
+
+    .eco-text span {
+        display: block;
+        opacity: 0;
+        animation: reveal 0.5s forwards var(--d);
+    }
+
+    .moreBtn {
+        width: 18px;
+        height: 18px;
+    }
+
+    .counter {
+        position: relative;
+        right: 0;
+        display: block;
+        float: right;
+        z-index: 1;
+        padding-top: 14px;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .counter-number {
+        display: flex;
+    }
+
+    .counter-number::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        right: -5px;
+        width: 15px;
+        height: 15px;
+        background-color: var(--mainColor);
+        border-radius: 50%;        
+    }
+
+    .counter-name1 {
+        padding-left: 8px;
+        padding-bottom: 13px;
+    }
+
+    .counter-name2 {
+        position: relative;
+        right: 10px;
+    }
+
+    .tasty-img {
+        position: absolute;
+        width: 168px;
+        height: 133px;
+        z-index: 2;
+        bottom: 0;
+        right: 34px;
+        animation: roll-in-blurred-right 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.2s both;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-title {
+        width: 277px;
+        padding-top: 89px;
+        }
+
+    .heroBtn__list {
+        padding: 25px 0 58px 0;
+    }
+
+    .circle {
+        top: -30px;
+        left: 515px;
+        width: 538px;
+        height: 538px;
+    }
+
+    .ice-cream {
+        left: 630px;
+        width: 236px;
+        height: 557px;
+    }
+
+    .eco-img {
+        width: 188px;
+        height: 191px;
+        margin-bottom: 45px;
+    }
+
+    .eco-text {
+        width: 200px;
+        padding-top: 56px;
+        margin-left: 20px;
+    }
+
+    .moreBtn {
+        width: 26px;
+        height: 26px;
+        margin-top: 20px;
+    }
+
+    .hero .icon-moreBtn {
+        width: 9px;
+        height: 8px;
+    }
+        
+    .counter {
+        padding-top: 74px;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .counter-number::before {
+        right: -5px;
+        width: 25px;
+        height: 25px;       
+    }
+
+    .counter-name1 {
+        padding-left: 15px;
+        padding-bottom: 18px;
+    }
+
+    .counter-name2 {
+        right: 15px;
+    }
+
+    .tasty-img {
+        width: 293px;
+        height: 232px;
+        right: 96px;
+    }
+}

@@ -1,0 +1,351 @@
+// animations for ICE CREAM ICON LOGO
+.icon-logo-animation {
+	-webkit-animation: rotate-in-ver 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite forwards;
+    animation: rotate-in-ver 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite forwards;
+}
+
+// animation for ICE CREAM LOGO
+@keyframes rotate-in-ver {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+// animation for ICECREAM LOGO TEXT
+.icecreamText-animation {
+	-webkit-animation: text-focus-in 1s linear forwards ;
+    animation: text-focus-in 1s linear forwards;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+// animation for NAV__LINK
+@keyframes text-shadow-drop-center {
+    0% {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+        text-shadow: 0 0 18px rgba(0, 0, 0, 0.5);
+    }
+}
+
+// animation for BIO TEXT 
+@keyframes reveal {
+    from {
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+// animation for PASSION TEXT
+@keyframes glow {
+    from {
+        text-shadow: 0px 0px 1px #D41443, 0px 0px 1px #D41443;
+    }
+    to {
+        text-shadow: 0px 0px 5px #D41443, 0px 0px 5px #D41443;
+    }
+}
+
+// animation for ECO IMAGE
+@-webkit-keyframes roll-in-blurred-left {
+    0% {
+        -webkit-transform: translateX(-1000px) rotate(-720deg);
+        transform: translateX(-1000px) rotate(-720deg);
+        -webkit-filter: blur(50px);
+        filter: blur(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+@keyframes roll-in-blurred-left {
+    0% {
+        -webkit-transform: translateX(-1000px) rotate(-720deg);
+        transform: translateX(-1000px) rotate(-720deg);
+        -webkit-filter: blur(50px);
+        filter: blur(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+// animation for ICE CREAM IMAGE
+@-webkit-keyframes flip-in-ver-left {
+    0% {
+        -webkit-transform: rotateY(80deg);
+                transform: rotateY(80deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotateY(0);
+                transform: rotateY(0);
+        opacity: 1;
+    }
+}
+@keyframes flip-in-ver-left {
+    0% {
+        -webkit-transform: rotateY(80deg);
+                transform: rotateY(80deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotateY(0);
+                transform: rotateY(0);
+        opacity: 1;
+    }
+}
+
+// animation for TASTY IMAGE
+@-webkit-keyframes roll-in-blurred-right {
+    0% {
+        -webkit-transform: translateX(1000px) rotate(720deg);
+        transform: translateX(1000px) rotate(720deg);
+        -webkit-filter: blur(50px);
+        filter: blur(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+@keyframes roll-in-blurred-right {
+    0% {
+        -webkit-transform: translateX(1000px) rotate(720deg);
+        transform: translateX(1000px) rotate(720deg);
+        -webkit-filter: blur(50px);
+        filter: blur(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+// animation for CIRCLE BACKGROUND IMAGE
+.circle-animation {
+	-webkit-animation: color-change-2x 2s linear infinite alternate both;
+    animation: color-change-2x 2s linear infinite alternate both;
+}
+
+.pulsate-fwd {
+	-webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;
+    animation: pulsate-fwd 0.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes color-change-2x {
+    0% {
+        background: #FFA5BA;
+    }
+    100% {
+        background: #f593aa;
+    }
+}
+@keyframes color-change-2x {
+    0% {
+        background: #FFA5BA;
+    }
+    100% {
+        background: #f593aa;
+    }
+}
+
+@-webkit-keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.01);
+        transform: scale(1.01);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.01);
+        transform: scale(1.01);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+//animation for SECTION TITLE
+.section-title-animation {
+    -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+//animation for CONTACT CARD ENTRANCES
+.slide-in-left {
+	-webkit-animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+                transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+                transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-bottom {
+	-webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+                transform: translateY(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+                transform: translateY(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-right {
+	-webkit-animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(1000px);
+                transform: translateX(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(1000px);
+                transform: translateX(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+}
