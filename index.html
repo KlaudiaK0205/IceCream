@@ -16,6 +16,8 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">    
     <!-- ANIMATE-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- SLICK CAROUSEL-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- STYLES -->
     <link rel="stylesheet" href="./sass/main.css">
 </head>
@@ -284,6 +286,219 @@
                     </ul>
                 </div>
             </div>            
+        </section>
+
+        <section class="gallery">
+            <div class="container">
+
+                <h2 class="section-title" hidden>Gallery</h2>
+
+                <div class="gallery-grid">
+                    <!-- PICTURE 1 -->
+                    <div class="gallery-grid__item gallery-grid__item-1">
+                        <picture>
+                            <source 
+                            srcset="/images/desktop/gallery/1gallery_desktop@1x.jpg 1x, /images/desktop/gallery/1gallery_desktop@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/tablet/gallery/1gallery_tablet@1x.jpg 1x, /images/tablet/gallery/1gallery_tablet@2x.jpg 2x"
+                            media="(min-width:768px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/mobile/gallery/1gallery_mobile@1x.jpg 1x, /images/mobile/gallery/1gallery_mobile@2x.jpg 2x"
+                            media="(min-width:320px)"
+                            type="image/jpg">
+                            <img 
+                            class="gallery-img" 
+                            src="/images/mobile/gallery/1gallery_mobile@1x.jpg" 
+                            alt="lime ice cream on a plate">
+                        </picture>
+                    </div>
+                    <div class="gallery-grid__item gallery-grid__item-2">
+                        <picture>
+                            <source 
+                            srcset="/images/desktop/gallery/2gallery_desktop@1x.jpg 1x, /images/desktop/gallery/2gallery_desktop@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/tablet/gallery/2gallery_tablet@1x.jpg 1x, /images/tablet/gallery/2gallery_tablet@2x.jpg 2x"
+                            media="(min-width:768px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/mobile/gallery/2gallery_mobile@1x.jpg 1x, /images/mobile/gallery/2gallery_mobile@2x.jpg 2x"
+                            media="(min-width:320px)"
+                            type="image/jpg">
+                            <img 
+                            class="gallery-img" 
+                            src="/images/mobile/gallery/2gallery_mobile@1x.jpg" 
+                            alt="strawberry and vanilla ice cream">
+                        </picture>
+                    </div>
+                    <div class="gallery-grid__item gallery-grid__item-3">
+                        <picture>
+                            <source 
+                            srcset="/images/desktop/gallery/3gallery_desktop@1x.jpg 1x, /images/desktop/gallery/3gallery_desktop@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/tablet/gallery/3gallery_tablet@1x.jpg 1x, /images/tablet/gallery/3gallery_tablet@2x.jpg 2x"
+                            media="(min-width:768px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/mobile/gallery/3gallery_mobile@1x.jpg 1x, /images/mobile/gallery/3gallery_mobile@2x.jpg 2x"
+                            media="(min-width:320px)"
+                            type="image/jpg">
+                            <img 
+                            class="gallery-img" 
+                            src="/images/mobile/gallery/3gallery_mobile@1x.jpg" 
+                            alt="raspberry ice cream on lolly">
+                        </picture>
+                    </div>
+                    <div class="gallery-grid__item gallery-grid__item-4">
+                        <picture>
+                            <source 
+                            srcset="/images/desktop/gallery/4gallery_desktop@1x.jpg 1x, /images/desktop/gallery/4gallery_desktop@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/tablet/gallery/4gallery_tablet@1x.jpg 1x, /images/tablet/gallery/4gallery_tablet@2x.jpg 2x"
+                            media="(min-width:768px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/mobile/gallery/4gallery_mobile@1x.jpg 1x, /images/mobile/gallery/4gallery_mobile@2x.jpg 2x"
+                            media="(min-width:320px)"
+                            type="image/jpg">
+                            <img 
+                            class="gallery-img" 
+                            src="/images/mobile/gallery/4gallery_mobile@1x.jpg" 
+                            alt="ice cream cones">
+                        </picture>
+                    </div>
+                    <div class="gallery-grid__item gallery-grid__item-5">
+                        <picture>
+                            <source 
+                            srcset="/images/desktop/gallery/5gallery_desktop@1x.jpg 1x, /images/desktop/gallery/5gallery_desktop@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/tablet/gallery/5gallery_tablet@1x.jpg 1x, /images/tablet/gallery/5gallery_tablet@2x.jpg 2x"
+                            media="(min-width:768px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/mobile/gallery/5gallery_mobile@1x.jpg 1x, /images/mobile/gallery/5gallery_mobile@2x.jpg 2x"
+                            media="(min-width:320px)"
+                            type="image/jpg">
+                            <img 
+                            class="gallery-img" 
+                            src="/images/mobile/gallery/5gallery_mobile@1x.jpg" 
+                            alt="girl with ice cream">
+                        </picture>
+                    </div>
+                    <div class="gallery-grid__item gallery-grid__item-6">
+                        <picture>
+                            <source 
+                            srcset="/images/desktop/gallery/6gallery_desktop@1x.jpg 1x, /images/desktop/gallery/6gallery_desktop@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/tablet/gallery/6gallery_tablet@1x.jpg 1x, /images/tablet/gallery/6gallery_tablet@2x.jpg 2x"
+                            media="(min-width:768px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/mobile/gallery/6gallery_mobile@1x.jpg 1x, /images/mobile/gallery/6gallery_mobile@2x.jpg 2x"
+                            media="(min-width:320px)"
+                            type="image/jpg">
+                            <img 
+                            class="gallery-img" 
+                            src="/images/mobile/gallery/6gallery_mobile@1x.jpg" 
+                            alt="ice cream in a bowl with blueberries">
+                        </picture>
+                    </div>
+                    <div class="gallery-grid__item gallery-grid__item-7">
+                        <picture>
+                            <source 
+                            srcset="/images/desktop/gallery/7gallery_desktop@1x.jpg 1x, /images/desktop/gallery/7gallery_desktop@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/tablet/gallery/7gallery_tablet@1x.jpg 1x, /images/tablet/gallery/7gallery_tablet@2x.jpg 2x"
+                            media="(min-width:768px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/mobile/gallery/7gallery_mobile@1x.jpg 1x, /images/mobile/gallery/7gallery_mobile@2x.jpg 2x"
+                            media="(min-width:320px)"
+                            type="image/jpg">
+                            <img 
+                            class="gallery-img" 
+                            src="/images/mobile/gallery/7gallery_mobile@1x.jpg" 
+                            alt="cherry ice cream in a cone">
+                        </picture>
+                    </div>
+                    <div class="gallery-grid__item gallery-grid__item-8">
+                        <picture>
+                            <source 
+                            srcset="/images/desktop/gallery/8gallery_desktop@1x.jpg 1x, /images/desktop/gallery/8gallery_desktop@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/tablet/gallery/8gallery_tablet@1x.jpg 1x, /images/tablet/gallery/8gallery_tablet@2x.jpg 2x"
+                            media="(min-width:768px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/mobile/gallery/8gallery_mobile@1x.jpg 1x, /images/mobile/gallery/8gallery_mobile@2x.jpg 2x"
+                            media="(min-width:320px)"
+                            type="image/jpg">
+                            <img 
+                            class="gallery-img" 
+                            src="/images/mobile/gallery/8gallery_mobile@1x.jpg" 
+                            alt="cherry ice cream with a dog">
+                        </picture>
+                        
+                    </div>
+                    <div class="gallery-grid__item gallery-grid__item-9">
+                        <picture>
+                            <source 
+                            srcset="/images/desktop/gallery/9gallery_desktop@1x.jpg 1x, /images/desktop/gallery/9gallery_desktop@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/tablet/gallery/9gallery_tablet@1x.jpg 1x, /images/tablet/gallery/9gallery_tablet@2x.jpg 2x"
+                            media="(min-width:768px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/mobile/gallery/9gallery_mobile@1x.jpg 1x, /images/mobile/gallery/9gallery_mobile@2x.jpg 2x"
+                            media="(min-width:320px)"
+                            type="image/jpg">
+                            <img
+                            class="gallery-img" 
+                            src="/images/mobile/gallery/9gallery_mobile@1x.jpg" 
+                            alt="chocolate milkshakes">
+                        </picture>
+                    </div>
+                    <div class="gallery-grid__item gallery-grid__item-10">
+                        <picture>
+                            <source 
+                            srcset="/images/desktop/gallery/10gallery_desktop@1x.jpg 1x, /images/desktop/gallery/10gallery_desktop@2x.jpg 2x"
+                            media="(min-width:1200px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/tablet/gallery/10gallery_tablet@1x.jpg 1x, /images/tablet/gallery/10gallery_tablet@2x.jpg 2x"
+                            media="(min-width:768px)"
+                            type="image/jpg">
+                            <source
+                            srcset="/images/mobile/gallery/10gallery_mobile@1x.jpg 1x, /images/mobile/gallery/10gallery_mobile@2x.jpg 2x"
+                            media="(min-width:320px)"
+                            type="image/jpg">
+                            <img
+                            class="gallery-img" 
+                            src="/images/mobile/gallery/10gallery_mobile@1x.jpg" 
+                            alt="ice cream cupcake">
+                        </picture>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
     </main>
