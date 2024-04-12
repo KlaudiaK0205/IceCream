@@ -106,6 +106,21 @@
     color: var(--undertitleColor);
 }
 
+.customer-review {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.5;
+    color: var(--undertitleColor);
+
+}
+
+.customer-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.85;
+    color: var(--undertitleColor);
+}
+
 @media screen and (min-width: 768px) {
     .logo-text {
         font-size: 30px;
@@ -162,6 +177,15 @@
     .howItsMade-text {
     font-size: 14px;
     }
+
+    .customer-review {
+        font-size: 14px;
+        line-height: 2.3;
+    }
+    
+    .customer-name {
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -208,5 +232,14 @@
     
     .howItsMade-text {
         font-size: 14px;
+    }
+
+    .customer-review {
+        font-size: 16px;
+        line-height: 2.0;
+    }
+    
+    .customer-name {
+        font-size: 20px;
     }
 }
