@@ -1,5 +1,6 @@
 body {
   font-family: var(--main-font);
+  font-weight: 500;
   margin: 0;
   padding: 0;
 }
@@ -539,6 +540,29 @@ button {
   animation: scale-up-center 1s linear infinite;
 }
 
+.locationBtn,
+.franchiseBtn {
+  height: 44px;
+  font-family: DM Sans, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3125;
+  border-radius: 22px;
+  border: none;
+}
+
+.locationBtn {
+  width: 198px;
+  color: var(--mainColor);
+  background-color: var(--brandColor);
+}
+
+.franchiseBtn {
+  width: 180px;
+  color: var(--brandColor);
+  background: var(--mainColor);
+}
+
 @keyframes scale-up-center {
   0% {
     transform: scale(1);
@@ -644,7 +668,6 @@ button {
 .howItsMade-undertitle,
 .howItsMade-text {
   font-size: 12px;
-  font-weight: 500;
   line-height: 1.6;
 }
 
@@ -664,17 +687,69 @@ button {
 }
 
 .customer-review {
-  font-weight: 500;
   font-size: 12px;
   line-height: 2.5;
   color: var(--undertitleColor);
 }
 
 .customer-name {
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.85;
   color: var(--undertitleColor);
+}
+
+.location-name {
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  background: var(--iceCoffeeBg);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mainColor);
+}
+
+.cafe {
+  width: 80px;
+  height: 16px;
+  background: var(--iceCoffeeBg);
+}
+
+.foodtruck {
+  width: 130px;
+  height: 16px;
+  background: var(--milkshakesBg);
+}
+
+.location-town {
+  font-size: 12px;
+  line-height: 1.86;
+}
+
+.location-description {
+  font-size: 12px;
+  line-height: 1.83;
+  max-width: 243px;
+  color: #907e82;
+}
+
+.location-openingDays {
+  font-size: 12px;
+  line-height: 1.86;
+}
+
+.location-openingHours {
+  font-size: 12px;
+  line-height: 1.86;
+  color: #ffa5ba;
+}
+
+.location-phone,
+.location-email {
+  font-size: 12px;
+  line-height: 1.83;
+  color: #907e82;
 }
 
 @media screen and (min-width: 768px) {
@@ -773,6 +848,35 @@ button {
   .customer-name {
     font-size: 20px;
   }
+  .location-name {
+    font-size: 16px;
+  }
+  .cafe {
+    width: 73px;
+    height: 28px;
+    background: var(--iceCoffeeBg);
+  }
+  .foodtruck {
+    width: 138px;
+    height: 28px;
+  }
+  .location-town {
+    font-size: 16px;
+  }
+  .location-description {
+    font-size: 16px;
+    max-width: 243px;
+  }
+  .location-openingDays {
+    font-size: 16px;
+  }
+  .location-openingHours {
+    font-size: 16px;
+  }
+  .location-phone,
+  .location-email {
+    font-size: 16px;
+  }
 }
 .icon-logo {
   width: 50px;
@@ -803,6 +907,13 @@ button {
   margin-left: 10px;
 }
 
+.icon-readMore-white {
+  width: 8px;
+  height: 8px;
+  margin-left: 10px;
+  fill: var(--mainColor);
+}
+
 .icon-moreBtn {
   width: 6px;
   height: 6px;
@@ -826,7 +937,7 @@ button {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 3px 3px;
   grid-template-areas: ". gallery-grid__item-2 gallery-grid__item-4 gallery-grid__item-4 gallery-grid__item-6 gallery-grid__item-8 ." "gallery-grid__item-1 . gallery-grid__item-4 gallery-grid__item-4 . . gallery-grid__item-10" ". gallery-grid__item-3 gallery-grid__item-5 . gallery-grid__item-7 gallery-grid__item-9 .";
 }
@@ -1380,6 +1491,162 @@ button {
     width: 250px;
   }
 }
+.locations {
+  background-image: linear-gradient(#fff 30px, #fff5f6 0, #fff5f6 851px);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  background-position-y: 60px, 0;
+}
+
+.locations__list {
+  display: block;
+  gap: 31px;
+}
+
+.locations__item {
+  width: 220px;
+  background-color: var(--mainColor);
+  padding: 43px 20px;
+  border-radius: 22px;
+  box-shadow: 0 8px 30px rgba(212, 20, 67, 0.1);
+  margin: 0 auto;
+}
+.locations__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.locations__item:hover {
+  transform: scale(1.1);
+}
+
+.location-town {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.location-description::after {
+  content: "";
+  width: 179px;
+  height: 1px;
+  background-color: #E1E1E1;
+  display: flex;
+  margin-top: 25px;
+}
+
+.location-openingDays {
+  margin-top: 25px;
+}
+
+.location-phone::before {
+  content: "";
+  width: 179px;
+  height: 1px;
+  background-color: #E1E1E1;
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.locations-btn__list {
+  display: grid;
+  gap: 10px;
+  margin-top: 54px;
+  justify-content: center;
+}
+
+.location-btn__btn {
+  width: 161px;
+}
+
+@media screen and (min-width: 768px) {
+  .locations {
+    background-image: linear-gradient(#fff 30px, #fff5f6 0, #fff5f6 851px);
+    background-position-y: 60px, 0;
+  }
+  .locations__list {
+    display: flex;
+    gap: 20px;
+  }
+  .locations__item {
+    padding: 50px 31px;
+  }
+  .locations__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .location-town {
+    margin-top: 30px;
+    margin-bottom: 14px;
+  }
+  .location-description::after {
+    width: 157px;
+    margin-top: 30px;
+  }
+  .location-openingDays {
+    margin-top: 30px;
+  }
+  .location-phone::before {
+    width: 157px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .locations-btn__list {
+    display: flex;
+    gap: 14px;
+    margin-top: 81px;
+    justify-content: center;
+  }
+  .locationBtn {
+    width: 191px;
+  }
+  .franchiseBtn {
+    width: 174px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .locations {
+    background-image: url(/images/desktop/locations/sectionbg_desktop@1x.png), linear-gradient(#fff 100px, #fff5f6 0, #fff5f6 851px);
+    background-position: 50%;
+    background-position-y: 80px, 0;
+  }
+  .locations__list {
+    display: flex;
+    gap: 31px;
+  }
+  .locations__item {
+    width: 330px;
+    padding: 51px 43px 62px;
+  }
+  .location-town {
+    margin-top: 32px;
+    margin-bottom: 10px;
+  }
+  .location-description::after {
+    content: "";
+    width: 234px;
+    height: 1px;
+    background-color: #E1E1E1;
+    display: flex;
+    margin-top: 32px;
+  }
+  .location-openingDays {
+    margin-top: 32px;
+  }
+  .location-phone::before {
+    content: "";
+    width: 234px;
+    height: 1px;
+    background-color: #E1E1E1;
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  .locations-btn__list {
+    display: flex;
+    gap: 15px;
+    margin-top: 86px;
+    justify-content: center;
+  }
+}
 .our-products {
   text-align: center;
 }
@@ -1558,6 +1825,7 @@ button {
   width: 280px;
   background-color: #FAFAFA;
   margin: 0 auto;
+  padding-bottom: 25px;
 }
 .customer-review::before {
   position: relative;

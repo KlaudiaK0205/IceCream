@@ -16,7 +16,7 @@
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 3px 3px; 
     grid-template-areas: 
         ". gallery-grid__item-2 gallery-grid__item-4 gallery-grid__item-4 gallery-grid__item-6 gallery-grid__item-8 ."

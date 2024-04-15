@@ -1,0 +1,200 @@
+.locations {
+    background-image: linear-gradient(#fff 30px, #fff5f6 0, #fff5f6 851px);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    background-position-y: 60px, 0;
+}
+
+
+.locations__list {
+    display: block;
+    gap: 31px;
+}
+
+.locations__item {
+    width: 220px;
+    background-color: var(--mainColor);
+    padding: 43px 20px;
+    border-radius: 22px;
+    box-shadow: 0 8px 30px rgba(212,20,67,.1);
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &:hover
+    {
+        transform: scale(1.1);
+    }
+}
+
+.location-town {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.location-description {
+    
+    &::after {
+        content: "";
+        width: 179px;
+        height: 1px;
+        background-color: #E1E1E1;
+        display: flex;
+        margin-top: 25px; 
+    }
+}
+
+.location-openingDays {
+    margin-top: 25px;
+}
+
+.location-phone {
+
+    &::before {
+        content: "";
+        width: 179px;
+        height: 1px;
+        background-color: #E1E1E1;
+        display: flex;
+        margin-top: 25px; 
+        margin-bottom: 25px; 
+    }
+}
+
+.locations-btn__list {
+    display: grid;
+    gap: 10px;
+    margin-top: 54px;
+    justify-content: center;
+}
+
+.location-btn__btn {
+    width: 161px;
+}
+
+@media screen and (min-width: 768px) {
+    .locations {
+        background-image: linear-gradient(#fff 30px, #fff5f6 0, #fff5f6 851px);
+        background-position-y: 60px, 0;
+    }
+    
+    
+    .locations__list {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .locations__item {
+        padding: 50px 31px;
+    
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+    
+    .location-town {
+        margin-top: 30px;
+        margin-bottom: 14px;
+    }
+    
+    .location-description {
+        
+        &::after {
+            width: 157px;
+            margin-top: 30px; 
+        }
+    }
+    
+    .location-openingDays {
+        margin-top: 30px;
+    }
+    
+    .location-phone {
+    
+        &::before {
+            width: 157px;
+            margin-top: 30px; 
+            margin-bottom: 30px; 
+        }
+    }
+    
+    .locations-btn__list {
+        display: flex;
+        gap: 14px;
+        margin-top: 81px;
+        justify-content: center;
+    }
+    
+    .locationBtn {
+        width: 191px;
+}
+
+    .franchiseBtn {
+        width: 174px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .locations {
+        background-image: url(/images/desktop/locations/sectionbg_desktop@1x.png),
+        linear-gradient(#fff 100px, #fff5f6 0, #fff5f6 851px);
+        background-position: 50%;
+        background-position-y: 80px, 0;
+    }
+    
+    
+    .locations__list {
+        display: flex;
+        gap: 31px;
+    }
+    
+    .locations__item {
+        width: 330px;
+        padding: 51px 43px 62px;
+    }
+    
+    .location-town {
+        margin-top: 32px;
+        margin-bottom: 10px;
+    }
+    
+    .location-description {
+        
+        &::after {
+            content: "";
+            width: 234px;
+            height: 1px;
+            background-color: #E1E1E1;
+            display: flex;
+            margin-top: 32px; 
+        }
+    }
+    
+    .location-openingDays {
+        margin-top: 32px;
+    }
+    
+    .location-phone {
+    
+        &::before {
+            content: "";
+            width: 234px;
+            height: 1px;
+            background-color: #E1E1E1;
+            display: flex;
+            margin-top: 32px; 
+            margin-bottom: 32px; 
+        }
+    }
+    
+    .locations-btn__list {
+        display: flex;
+        gap: 15px;
+        margin-top: 86px;
+        justify-content: center;
+    }
+
+}

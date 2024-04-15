@@ -87,7 +87,6 @@
 .howItsMade-undertitle,
 .howItsMade-text {
     font-size: 12px;
-    font-weight: 500;
     line-height: 1.6;
 }
 
@@ -107,7 +106,6 @@
 }
 
 .customer-review {
-    font-weight: 500;
     font-size: 12px;
     line-height: 2.5;
     color: var(--undertitleColor);
@@ -115,10 +113,62 @@
 }
 
 .customer-name {
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.85;
     color: var(--undertitleColor);
+}
+
+.location-name {
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: .04em;
+    background: var(--iceCoffeeBg);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--mainColor);
+}
+
+.cafe {
+    width: 80px;
+    height: 16px;
+    background: var(--iceCoffeeBg);
+}
+
+.foodtruck {
+    width: 130px;
+    height: 16px;
+    background: var(--milkshakesBg);
+}
+.location-town {
+    font-size: 12px;
+    line-height: 1.86;
+}
+
+.location-description {
+    font-size: 12px;
+    line-height: 1.83;
+    max-width: 243px;
+    color: #907e82;
+}
+
+.location-openingDays {
+    font-size: 12px;
+    line-height: 1.86;
+}
+
+.location-openingHours {
+    font-size: 12px;
+    line-height: 1.86;
+    color: #ffa5ba;
+}
+
+.location-phone,
+.location-email {
+    font-size: 12px;
+    line-height: 1.83;
+    color: #907e82;
 }
 
 @media screen and (min-width: 768px) {
@@ -241,5 +291,42 @@
     
     .customer-name {
         font-size: 20px;
+    }
+
+    .location-name {
+        font-size: 16px;
+    }
+    
+    .cafe {
+        width: 73px;
+        height: 28px;
+        background: var(--iceCoffeeBg);
+    }
+    
+    .foodtruck {
+        width: 138px;
+        height: 28px;
+    }
+
+    .location-town {
+        font-size: 16px;
+    }
+    
+    .location-description {
+        font-size: 16px;
+        max-width: 243px;
+    }
+    
+    .location-openingDays {
+        font-size: 16px;
+    }
+    
+    .location-openingHours {
+        font-size: 16px;
+    }
+    
+    .location-phone,
+    .location-email {
+        font-size: 16px;
     }
 }
