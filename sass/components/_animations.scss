@@ -9,7 +9,6 @@
     from {
         transform: rotateY(0deg);
     }
-
     to {
         transform: rotateY(360deg);
     }
@@ -409,5 +408,28 @@
         -webkit-transform: translateX(0);
                 transform: translateX(0);
         opacity: 1;
+    }
+}
+
+// animation for buyBtn
+@keyframes scale-up-center {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+// animation for read-moreBtn
+@keyframes shadow-drop-center {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
     }
 }

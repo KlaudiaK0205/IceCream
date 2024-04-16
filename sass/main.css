@@ -79,9 +79,46 @@ button {
   }
 }
 .section {
-  padding: 120px 0;
+  padding: 100px 0;
 }
 
+.section-title {
+  font-family: var(--header-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.138;
+  text-transform: uppercase;
+  color: var(--circleColor);
+}
+
+.highlighted-word-section {
+  font-family: var(--header-font);
+  font-size: 34px;
+  line-height: 1.067;
+  letter-spacing: 0.04em;
+  color: var(--brandColor);
+  animation: glow 1.5s infinite alternate;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 120px 0;
+  }
+  .section-title {
+    font-size: 26px;
+  }
+  .highlighted-word-section {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 30px;
+  }
+  .highlighted-word-section {
+    font-size: 58px;
+  }
+}
 .icon-logo-animation {
   -webkit-animation: rotate-in-ver 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite forwards;
   animation: rotate-in-ver 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite forwards;
@@ -465,6 +502,25 @@ button {
     opacity: 1;
   }
 }
+@keyframes scale-up-center {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes shadow-drop-center {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
 .buyBtn {
   width: 159px;
   height: 44px;
@@ -481,6 +537,11 @@ button {
 .buyBtn :focus {
   background-color: var(--hoverBuyBtn);
   animation: scale-up-center 1s linear infinite;
+}
+
+.burger-menuBtn {
+  background-color: transparent;
+  border: none;
 }
 
 .productsBtn,
@@ -556,328 +617,23 @@ button {
   color: var(--mainColor);
   background-color: var(--brandColor);
 }
+.locationBtn:hover,
+.locationBtn :focus {
+  background-color: var(--hoverProductsBtn);
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 
 .franchiseBtn {
   width: 180px;
   color: var(--brandColor);
   background: var(--mainColor);
 }
-
-@keyframes scale-up-center {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes shadow-drop-center {
-  0% {
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-  100% {
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-  }
-}
-.logo-text,
-.hero-title,
-.section-title,
-.product-name {
-  font-family: var(--header-font);
-  font-weight: 400;
-  text-transform: uppercase;
+.franchiseBtn:hover,
+.franchiseBtn :focus {
+  background-color: var(--hoverBuyBtn);
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.logo-text,
-.highlighted-word {
-  color: var(--brandColor);
-}
-
-.nav__link,
-.hero-title,
-.product-name,
-.product-text {
-  color: var(--mainColor);
-}
-
-.logo-text {
-  font-size: 25px;
-  padding-left: 10px;
-}
-
-.nav__link {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.3125;
-}
-.nav__link:hover,
-.nav__link :focus {
-  color: var(--brandColor);
-  animation: text-shadow-drop-center ease-in-out 800ms both;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 800ms;
-}
-
-.hero-title {
-  font-size: 26px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
-}
-
-.highlighted-word {
-  font-family: var(--header-font);
-  font-size: 48px;
-  line-height: 1.138;
-  letter-spacing: 0.04em;
-  animation: glow 1.5s infinite alternate;
-}
-
-.highlighted-word-section {
-  font-size: 34px;
-}
-
-.productsBtn,
-.how-its-madeBtn {
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
-}
-
-.section-title {
-  font-size: 18px;
-  line-height: 1.138;
-  text-transform: uppercase;
-  color: var(--circleColor);
-}
-
-.product-name {
-  font-size: 30px;
-  line-height: 1.1333333333;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.product-text {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-.howItsMade-undertitle,
-.howItsMade-text {
-  font-size: 12px;
-  line-height: 1.6;
-}
-
-.howItsMade-undertitle {
-  color: var(--undertitleColor);
-}
-
-.howItsMade-text {
-  color: var(--textColor);
-}
-
-.advantages-text {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.7;
-  color: var(--undertitleColor);
-}
-
-.customer-review {
-  font-size: 12px;
-  line-height: 2.5;
-  color: var(--undertitleColor);
-}
-
-.customer-name {
-  font-size: 14px;
-  line-height: 1.85;
-  color: var(--undertitleColor);
-}
-
-.location-name {
-  font-size: 12px;
-  line-height: 1.86;
-  letter-spacing: 0.04em;
-  background: var(--iceCoffeeBg);
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--mainColor);
-}
-
-.cafe {
-  width: 80px;
-  height: 16px;
-  background: var(--iceCoffeeBg);
-}
-
-.foodtruck {
-  width: 130px;
-  height: 16px;
-  background: var(--milkshakesBg);
-}
-
-.location-town {
-  font-size: 12px;
-  line-height: 1.86;
-}
-
-.location-description {
-  font-size: 12px;
-  line-height: 1.83;
-  max-width: 243px;
-  color: #907e82;
-}
-
-.location-openingDays {
-  font-size: 12px;
-  line-height: 1.86;
-}
-
-.location-openingHours {
-  font-size: 12px;
-  line-height: 1.86;
-  color: #ffa5ba;
-}
-
-.location-phone,
-.location-email {
-  font-size: 12px;
-  line-height: 1.83;
-  color: #907e82;
-}
-
-@media screen and (min-width: 768px) {
-  .logo-text {
-    font-size: 30px;
-  }
-  .hero-title {
-    font-size: 22px;
-  }
-  .highlighted-word {
-    font-size: 34px;
-  }
-  .highlighted-word-section {
-    font-size: 48px;
-  }
-  .eco-text {
-    font-size: 8px;
-    line-height: 1.5;
-    font-weight: 400;
-    letter-spacing: 0.03em;
-    color: var(--mainColor);
-  }
-  .counter-number {
-    font-family: var(--header-font);
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 1.15;
-    letter-spacing: 0.03em;
-    color: var(--brandColor);
-  }
-  .counter-name1,
-  .counter-name2 {
-    font-size: 8px;
-    color: var(--mainColor);
-  }
-  .section-title {
-    font-size: 26px;
-  }
-  .product-name {
-    font-size: 20px;
-  }
-  .product-text {
-    font-size: 14px;
-  }
-  .howItsMade-undertitle,
-  .howItsMade-text {
-    font-size: 14px;
-  }
-  .customer-review {
-    font-size: 14px;
-    line-height: 2.3;
-  }
-  .customer-name {
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .logo-text {
-    font-size: 35px;
-  }
-  .hero-title {
-    font-size: 38px;
-  }
-  .highlighted-word {
-    font-size: 58px;
-  }
-  .eco-text {
-    font-size: 14px;
-  }
-  .counter-number {
-    font-size: 46px;
-  }
-  .counter-name1,
-  .counter-name2 {
-    font-size: 14px;
-  }
-  .section-title {
-    font-size: 30px;
-  }
-  .product-name {
-    font-size: 30px;
-  }
-  .product-text {
-    font-size: 16px;
-  }
-  .howItsMade-undertitle {
-    font-size: 16px;
-  }
-  .howItsMade-text {
-    font-size: 14px;
-  }
-  .customer-review {
-    font-size: 16px;
-    line-height: 2;
-  }
-  .customer-name {
-    font-size: 20px;
-  }
-  .location-name {
-    font-size: 16px;
-  }
-  .cafe {
-    width: 73px;
-    height: 28px;
-    background: var(--iceCoffeeBg);
-  }
-  .foodtruck {
-    width: 138px;
-    height: 28px;
-  }
-  .location-town {
-    font-size: 16px;
-  }
-  .location-description {
-    font-size: 16px;
-    max-width: 243px;
-  }
-  .location-openingDays {
-    font-size: 16px;
-  }
-  .location-openingHours {
-    font-size: 16px;
-  }
-  .location-phone,
-  .location-email {
-    font-size: 16px;
-  }
-}
 .icon-logo {
   width: 50px;
   height: 50px;
@@ -920,17 +676,241 @@ button {
   fill: var(--brandColor);
 }
 
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.footer {
+  background-color: var(--howItsMadeBg);
+  padding-bottom: 25px;
+}
+
+.footer .container {
+  display: block;
+}
+
+.footer-title-box {
+  margin-right: auto;
+}
+
+.footer-title {
+  width: 234px;
+  font-family: Titan One, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.13333;
+  text-transform: uppercase;
+  color: var(--circleColor);
+}
+
+.footer-social__list {
+  display: flex;
+  float: right;
+}
+
+.footer-social__item {
+  background-color: var(--socialBg);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 43px;
+}
+.footer-social__item:not(:last-child) {
+  margin-right: 25px;
+}
+.footer-social__item:hover,
+.footer-social__item :focus {
+  animation: scale-up-center 1s linear infinite;
+  background-color: var(--brandColor);
+}
+
+.social-icon {
+  display: block;
+  fill: var(--mainColor);
+}
+
+.contact-phone {
+  float: right;
+  margin-top: 46px;
+  margin-bottom: 43px;
+}
+
+.footer-bottom-box {
+  text-align: center;
+}
+.footer-bottom-box::before {
+  content: "";
+  min-width: 1280px;
+  height: 1px;
+  background-color: var(--lineColor);
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.highlighted-word-phone:link {
+  color: var(--brandColor);
+}
+.highlighted-word-phone:link:visited {
+  color: var(--brandColor);
+}
+.highlighted-word-phone:link:hover,
+.highlighted-word-phone:link :focus {
+  text-shadow: 2px 2px 4px var(--brandColor);
+}
+
+.contact-phone {
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--undertitleColor);
+}
+
+.highlighted-word-phone {
+  color: var(--brandColor);
+}
+
+.footer-text {
+  width: 150px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  margin: 0 auto;
+  color: var(--textColor);
+  padding-top: 22px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-bottom: 18px;
+  }
+  .footer-title {
+    width: 340px;
+    font-size: 26px;
+  }
+  .footer-social__list {
+    display: flex;
+    position: relative;
+    top: -205px;
+  }
+  .footer-social__item {
+    background-color: var(--socialBg);
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 43px;
+  }
+  .footer-social__item:not(:last-child) {
+    margin-right: 25px;
+  }
+  .footer-social__item:hover,
+  .footer-social__item :focus {
+    animation: scale-up-center 1s linear infinite;
+    background-color: var(--brandColor);
+  }
+  .social-icon {
+    display: block;
+    fill: var(--mainColor);
+  }
+  .contact-phone {
+    float: right;
+    position: relative;
+    top: -155px;
+    margin-top: 46px;
+    margin-bottom: 43px;
+  }
+  .footer-bottom-box {
+    text-align: center;
+  }
+  .footer-bottom-box::before {
+    content: "";
+    min-width: 1280px;
+    height: 1px;
+    background-color: var(--lineColor);
+    display: flex;
+    margin-bottom: 8px;
+  }
+  .highlighted-word-phone:link {
+    color: var(--brandColor);
+  }
+  .highlighted-word-phone:link:visited {
+    color: var(--brandColor);
+  }
+  .highlighted-word-phone:link:hover,
+  .highlighted-word-phone:link :focus {
+    text-shadow: 2px 2px 4px var(--brandColor);
+  }
+  .contact-phone {
+    position: relative;
+    top: -130px;
+    right: -150px;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--undertitleColor);
+  }
+  .highlighted-word-phone {
+    color: var(--brandColor);
+  }
+  .footer-text {
+    min-width: 276px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    margin: 0 auto;
+    color: var(--textColor);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-bottom: 18px;
+  }
+  .footer-title {
+    width: 474px;
+    font-size: 30px;
+  }
+  .footer-social__list {
+    position: relative;
+    top: -130px;
+  }
+  .footer-social__item {
+    margin-top: 33px;
+  }
+  .contact-phone {
+    margin-top: 110px;
+    margin-bottom: 0;
+  }
+  .contact-phone {
+    position: relative;
+    top: -130px;
+    right: -150px;
+  }
+  .footer-text {
+    min-width: 276px;
+  }
+}
 .gallery {
-  background-image: linear-gradient(180deg, var(--howItsMadeBg) 25%, var(--mainColor) 0);
+  background-image: linear-gradient(180deg, var(--howItsMadeBg) 40%, var(--mainColor) 0);
 }
 
 .gallery-img {
   width: 100%;
   height: 100%;
+  border-radius: 22px;
 }
 .gallery-img:hover,
 .gallery-img :focus {
-  transform: scale(1);
+  position: relative;
+  z-index: 1;
+  transform: scale(1.2);
   transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1056,12 +1036,32 @@ button {
 }
 
 .logo-text {
+  font-family: var(--header-font);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.1333333333;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brandColor);
   padding-left: 10px;
 }
 
 .nav,
 .buyBtn {
   display: none;
+}
+
+.nav__link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3125;
+  color: var(--mainColor);
+}
+.nav__link:hover,
+.nav__link :focus {
+  color: var(--brandColor);
+  animation: text-shadow-drop-center ease-in-out 800ms both;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 800ms;
 }
 
 .burger-menuBtn {
@@ -1076,6 +1076,9 @@ button {
   }
   .header .container {
     max-width: 768px;
+  }
+  .logo-text {
+    font-size: 30px;
   }
   .nav {
     display: none;
@@ -1096,6 +1099,9 @@ button {
   }
   .header .container {
     max-width: 1280px;
+  }
+  .logo-text {
+    font-size: 35px;
   }
   .nav {
     display: flex;
@@ -1136,7 +1142,22 @@ button {
 
 .hero-title {
   width: 218px;
+  font-family: var(--header-font);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.154;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--mainColor);
   padding-top: 137px;
+}
+
+.highlighted-word {
+  font-family: var(--header-font);
+  font-size: 48px;
+  line-height: 1.067;
+  color: var(--brandColor);
+  animation: glow 1.5s infinite alternate;
 }
 
 .heroBtn__list {
@@ -1153,6 +1174,9 @@ button {
 
 .productsBtn,
 .how-its-madeBtn {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
   padding: 7px 14px;
 }
 
@@ -1187,7 +1211,13 @@ button {
 @media screen and (min-width: 768px) {
   .hero-title {
     width: 162px;
+    font-size: 22px;
+    line-height: 1.14;
     padding-top: 15px;
+  }
+  .highlighted-word {
+    font-size: 34px;
+    letter-spacing: 0.03em;
   }
   .heroBtn__list {
     padding: 20px 0;
@@ -1219,6 +1249,11 @@ button {
   }
   .eco-text {
     width: 114px;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--mainColor);
     padding-top: 47px;
   }
   .eco-text span {
@@ -1242,6 +1277,12 @@ button {
   }
   .counter-number {
     display: flex;
+    font-family: var(--header-font);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: var(--brandColor);
   }
   .counter-number::before {
     content: "";
@@ -1252,6 +1293,11 @@ button {
     height: 15px;
     background-color: var(--mainColor);
     border-radius: 50%;
+  }
+  .counter-name1,
+  .counter-name2 {
+    font-size: 8px;
+    color: var(--mainColor);
   }
   .counter-name1 {
     padding-left: 8px;
@@ -1274,7 +1320,11 @@ button {
 @media screen and (min-width: 1200px) {
   .hero-title {
     width: 277px;
+    font-size: 38px;
     padding-top: 89px;
+  }
+  .highlighted-word {
+    font-size: 58px;
   }
   .heroBtn__list {
     padding: 25px 0 58px 0;
@@ -1297,6 +1347,7 @@ button {
   }
   .eco-text {
     width: 200px;
+    font-size: 14px;
     padding-top: 56px;
     margin-left: 20px;
   }
@@ -1314,10 +1365,17 @@ button {
     margin-left: auto;
     margin-right: 10px;
   }
+  .counter-number {
+    font-size: 46px;
+  }
   .counter-number::before {
     right: -5px;
     width: 25px;
     height: 25px;
+  }
+  .counter-name1,
+  .counter-name2 {
+    font-size: 14px;
   }
   .counter-name1 {
     padding-left: 15px;
@@ -1334,10 +1392,6 @@ button {
 }
 .howItsMade {
   background-color: var(--howItsMadeBg);
-  background-image: url(/images/desktop/howItsMade/sectionbg_desktop@1x.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 100% 46%;
 }
 
 .howItsMade-box {
@@ -1361,12 +1415,20 @@ button {
   margin: 0 auto;
 }
 
+.howItsMade-undertitle,
+.howItsMade-text {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
 .howItsMade-undertitle {
+  color: var(--undertitleColor);
   padding: 46px 0;
 }
 
 .howItsMade-text {
-  padding-bottom: 17px;
+  color: var(--textColor);
+  padding-bottom: 20px;
 }
 
 .advantages__list {
@@ -1405,11 +1467,8 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .howItsMade {
-    background-position: 100% 95%;
-  }
   .howItsMade .section-title {
-    width: 429px;
+    width: 450px;
     margin-bottom: 50px;
   }
   .howItsMade-box {
@@ -1427,8 +1486,13 @@ button {
   .howItsMade__item {
     width: 340px;
   }
+  .howItsMade-undertitle,
+  .howItsMade-text {
+    font-size: 14px;
+  }
   .howItsMade-undertitle {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 30px;
   }
   .howItsMade-text {
     padding-bottom: 62px;
@@ -1453,8 +1517,10 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .howItsMade {
+    background-image: url(/images/desktop/howItsMade/sectionbg_desktop@1x.png);
     background-size: contain;
-    background-position: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .howItsMade .section-title {
     width: 534px;
@@ -1471,9 +1537,11 @@ button {
     margin: 0 auto;
   }
   .howItsMade-undertitle {
+    font-size: 16px;
     padding-bottom: 35px;
   }
   .howItsMade-text {
+    font-size: 14px;
     padding-bottom: 45px;
   }
   .advantages__item {
@@ -1492,7 +1560,7 @@ button {
   }
 }
 .locations {
-  background-image: linear-gradient(#fff 30px, #fff5f6 0, #fff5f6 851px);
+  background-image: linear-gradient(var(--mainColor) 30px, var(--howItsMadeBg) 0, var(--howItsMadeBg) 851px);
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: contain;
@@ -1519,29 +1587,76 @@ button {
   transform: scale(1.1);
 }
 
+.location-name {
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  background: var(--iceCoffeeBg);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mainColor);
+}
+
+.cafe {
+  width: 80px;
+  height: 16px;
+  background: var(--iceCoffeeBg);
+}
+
+.foodtruck {
+  width: 130px;
+  height: 16px;
+  background: var(--milkshakesBg);
+}
+
 .location-town {
+  font-size: 12px;
+  line-height: 1.86;
   margin-top: 25px;
   margin-bottom: 10px;
 }
 
+.location-description {
+  font-size: 12px;
+  line-height: 1.83;
+  max-width: 243px;
+  color: var(--textColor);
+}
 .location-description::after {
   content: "";
   width: 179px;
   height: 1px;
-  background-color: #E1E1E1;
+  background-color: var(--lineColor);
   display: flex;
   margin-top: 25px;
 }
 
 .location-openingDays {
+  font-size: 12px;
+  line-height: 1.86;
   margin-top: 25px;
+}
+
+.location-openingHours {
+  font-size: 12px;
+  line-height: 1.86;
+  color: var(--circleColor);
+}
+
+.location-phone,
+.location-email {
+  font-size: 12px;
+  line-height: 1.83;
+  color: var(--textColor);
 }
 
 .location-phone::before {
   content: "";
   width: 179px;
   height: 1px;
-  background-color: #E1E1E1;
+  background-color: var(--lineColor);
   display: flex;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -1560,7 +1675,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .locations {
-    background-image: linear-gradient(#fff 30px, #fff5f6 0, #fff5f6 851px);
+    background-image: linear-gradient(var(--mainColor) 30px, var(--howItsMadeBg) 0, var(--howItsMadeBg) 851px);
     background-position-y: 60px, 0;
   }
   .locations__list {
@@ -1604,7 +1719,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .locations {
-    background-image: url(/images/desktop/locations/sectionbg_desktop@1x.png), linear-gradient(#fff 100px, #fff5f6 0, #fff5f6 851px);
+    background-image: url(/images/desktop/locations/sectionbg_desktop@1x.png), linear-gradient(var(--mainColor) 100px, var(--howItsMadeBg) 0, var(--howItsMadeBg) 851px);
     background-position: 50%;
     background-position-y: 80px, 0;
   }
@@ -1616,26 +1731,51 @@ button {
     width: 330px;
     padding: 51px 43px 62px;
   }
+  .location-name {
+    font-size: 16px;
+  }
+  .cafe {
+    width: 73px;
+    height: 28px;
+    background: var(--iceCoffeeBg);
+  }
+  .foodtruck {
+    width: 138px;
+    height: 28px;
+  }
   .location-town {
+    font-size: 16px;
     margin-top: 32px;
     margin-bottom: 10px;
+  }
+  .location-description {
+    font-size: 16px;
+    max-width: 243px;
   }
   .location-description::after {
     content: "";
     width: 234px;
     height: 1px;
-    background-color: #E1E1E1;
+    background-color: var(--lineColor);
     display: flex;
     margin-top: 32px;
   }
   .location-openingDays {
+    font-size: 16px;
     margin-top: 32px;
+  }
+  .location-openingHours {
+    font-size: 16px;
+  }
+  .location-phone,
+  .location-email {
+    font-size: 16px;
   }
   .location-phone::before {
     content: "";
     width: 234px;
     height: 1px;
-    background-color: #E1E1E1;
+    background-color: var(--lineColor);
     display: flex;
     margin-top: 32px;
     margin-bottom: 32px;
@@ -1725,6 +1865,13 @@ button {
 }
 
 .product-name {
+  font-family: var(--header-font);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.1333333333;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--mainColor);
   padding-top: 163px;
 }
 .product-name::after {
@@ -1739,6 +1886,10 @@ button {
 
 .product-text {
   width: 200px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--mainColor);
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1754,6 +1905,13 @@ button {
 .our-products .icon-moreBtn {
   width: 9px;
   height: 9px;
+}
+
+.advantages-text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--undertitleColor);
 }
 
 @media screen and (min-width: 768px) {
@@ -1782,6 +1940,9 @@ button {
     width: 220px;
     height: 226px;
   }
+  .product-name {
+    font-size: 20px;
+  }
   .product-text {
     width: 180px;
   }
@@ -1802,8 +1963,12 @@ button {
     width: 335px;
     height: 335px;
   }
+  .product-name {
+    font-size: 30px;
+  }
   .product-text {
     width: 241px;
+    font-size: 16px;
     padding-bottom: 62px;
   }
   .our-products .moreBtn {
@@ -1823,7 +1988,10 @@ button {
   position: relative;
   z-index: 0;
   width: 280px;
-  background-color: #FAFAFA;
+  font-size: 12px;
+  line-height: 2.5;
+  color: var(--undertitleColor);
+  background-color: var(--reviewBg);
   margin: 0 auto;
   padding-bottom: 25px;
 }
@@ -1842,6 +2010,11 @@ button {
   margin: 0 auto;
 }
 
+.customer-name {
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--undertitleColor);
+}
 .customer-name::before {
   content: "...";
   display: block;
@@ -1855,7 +2028,7 @@ button {
 
 .lines {
   padding: 5px 7px 5px 7px;
-  background-image: repeating-linear-gradient(transparent, transparent 30px, #e1e1e1 0, #e1e1e1 31px);
+  background-image: repeating-linear-gradient(transparent, transparent 30px, var(--lineColor) 0, var(--lineColor) 31px);
 }
 
 .slick-dots li button:before {
@@ -1878,6 +2051,8 @@ button {
   }
   .customer-review {
     width: 620px;
+    font-size: 14px;
+    line-height: 2.3;
   }
   .customer-review::before {
     top: 35px;
@@ -1885,6 +2060,9 @@ button {
   }
   .customer-review-text {
     width: 460px;
+  }
+  .customer-name {
+    font-size: 16px;
   }
   .customer-name::before {
     padding-top: 24px;
@@ -1899,6 +2077,8 @@ button {
   }
   .customer-review {
     width: 900px;
+    font-size: 16px;
+    line-height: 2;
   }
   .customer-review::before {
     top: 40px;
@@ -1906,6 +2086,9 @@ button {
   }
   .customer-review-text {
     width: 700px;
+  }
+  .customer-name {
+    font-size: 20px;
   }
   .customer-name::before {
     padding-top: 24px;
@@ -1929,6 +2112,9 @@ button {
   --undertitleColor: #000;
   --textColor: #907E8A;
   --buyBtn-modal: #E17992;
+  --lineColor: #E1E1E1;
+  --reviewBg: #FAFAFA;
+  --socialBg: #FEA5BB;
 }
 
 .visually-hidden {

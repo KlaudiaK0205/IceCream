@@ -1,5 +1,5 @@
 .locations {
-    background-image: linear-gradient(#fff 30px, #fff5f6 0, #fff5f6 851px);
+    background-image: linear-gradient(var(--mainColor) 30px, var(--howItsMadeBg) 0, var(--howItsMadeBg) 851px);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: contain;
@@ -30,25 +30,70 @@
     }
 }
 
+.location-name {
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: .04em;
+    background: var(--iceCoffeeBg);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--mainColor);
+}
+
+.cafe {
+    width: 80px;
+    height: 16px;
+    background: var(--iceCoffeeBg);
+}
+
+.foodtruck {
+    width: 130px;
+    height: 16px;
+    background: var(--milkshakesBg);
+}
+
 .location-town {
+    font-size: 12px;
+    line-height: 1.86;
     margin-top: 25px;
     margin-bottom: 10px;
 }
 
 .location-description {
+    font-size: 12px;
+    line-height: 1.83;
+    max-width: 243px;
+    color: var(--textColor);
     
     &::after {
         content: "";
         width: 179px;
         height: 1px;
-        background-color: #E1E1E1;
+        background-color: var(--lineColor);
         display: flex;
         margin-top: 25px; 
     }
 }
 
 .location-openingDays {
+    font-size: 12px;
+    line-height: 1.86;
     margin-top: 25px;
+}
+
+.location-openingHours {
+    font-size: 12px;
+    line-height: 1.86;
+    color: var(--circleColor)
+}
+
+.location-phone,
+.location-email {
+    font-size: 12px;
+    line-height: 1.83;
+    color: var(--textColor);
 }
 
 .location-phone {
@@ -57,7 +102,7 @@
         content: "";
         width: 179px;
         height: 1px;
-        background-color: #E1E1E1;
+        background-color: var(--lineColor);
         display: flex;
         margin-top: 25px; 
         margin-bottom: 25px; 
@@ -77,60 +122,59 @@
 
 @media screen and (min-width: 768px) {
     .locations {
-        background-image: linear-gradient(#fff 30px, #fff5f6 0, #fff5f6 851px);
+        background-image: linear-gradient(var(--mainColor) 30px, var(--howItsMadeBg) 0,var(--howItsMadeBg) 851px);
         background-position-y: 60px, 0;
     }
-    
-    
+
     .locations__list {
         display: flex;
         gap: 20px;
     }
-    
+
     .locations__item {
         padding: 50px 31px;
-    
+
         &:not(:last-child) {
             margin-bottom: 0;
         }
     }
-    
+
     .location-town {
         margin-top: 30px;
         margin-bottom: 14px;
     }
-    
+
     .location-description {
-        
+
         &::after {
             width: 157px;
             margin-top: 30px; 
         }
     }
-    
+
     .location-openingDays {
         margin-top: 30px;
     }
-    
+
     .location-phone {
-    
+
         &::before {
             width: 157px;
             margin-top: 30px; 
             margin-bottom: 30px; 
         }
     }
-    
+
     .locations-btn__list {
         display: flex;
         gap: 14px;
         margin-top: 81px;
         justify-content: center;
     }
-    
+
     .locationBtn {
         width: 191px;
-}
+    }
 
     .franchiseBtn {
         width: 174px;
@@ -140,61 +184,87 @@
 @media screen and (min-width: 1200px) {
     .locations {
         background-image: url(/images/desktop/locations/sectionbg_desktop@1x.png),
-        linear-gradient(#fff 100px, #fff5f6 0, #fff5f6 851px);
+        linear-gradient(var(--mainColor) 100px,var(--howItsMadeBg) 0, var(--howItsMadeBg) 851px);
         background-position: 50%;
         background-position-y: 80px, 0;
     }
-    
-    
+
     .locations__list {
         display: flex;
         gap: 31px;
     }
-    
+
     .locations__item {
         width: 330px;
         padding: 51px 43px 62px;
     }
-    
+
+    .location-name {
+        font-size: 16px;
+    }
+
+    .cafe {
+        width: 73px;
+        height: 28px;
+        background: var(--iceCoffeeBg);
+    }
+
+    .foodtruck {
+        width: 138px;
+        height: 28px;
+    }
+
     .location-town {
+        font-size: 16px;
         margin-top: 32px;
         margin-bottom: 10px;
     }
-    
+
     .location-description {
-        
+        font-size: 16px;
+        max-width: 243px;
+
         &::after {
             content: "";
             width: 234px;
             height: 1px;
-            background-color: #E1E1E1;
+            background-color: var(--lineColor);
             display: flex;
             margin-top: 32px; 
         }
     }
-    
+
     .location-openingDays {
+        font-size: 16px;
         margin-top: 32px;
     }
-    
+
+    .location-openingHours {
+        font-size: 16px;
+    }
+
+    .location-phone,
+    .location-email {
+        font-size: 16px;
+    }
+
     .location-phone {
-    
+
         &::before {
             content: "";
             width: 234px;
             height: 1px;
-            background-color: #E1E1E1;
+            background-color: var(--lineColor);
             display: flex;
             margin-top: 32px; 
             margin-bottom: 32px; 
         }
     }
-    
+
     .locations-btn__list {
         display: flex;
         gap: 15px;
         margin-top: 86px;
         justify-content: center;
     }
-
 }

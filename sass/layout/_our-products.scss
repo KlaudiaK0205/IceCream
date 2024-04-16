@@ -88,6 +88,13 @@
 }
 
 .product-name {
+    font-family: var(--header-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.1333333333;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--mainColor);
     padding-top: 163px;
 
         &::after {
@@ -103,6 +110,10 @@
 
 .product-text {
     width: 200px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--mainColor);
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -118,6 +129,13 @@
 .our-products .icon-moreBtn {
     width: 9px;
     height: 9px;
+}
+
+.advantages-text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--undertitleColor);
 }
 
 @media screen and (min-width: 768px) {
@@ -151,6 +169,10 @@
         }
     }
 
+    .product-name {
+        font-size: 20px; 
+    }
+
     .product-text {
         width: 180px;
     }
@@ -175,9 +197,14 @@
             height: 335px;     
         }
     }
+    
+    .product-name {
+        font-size: 30px; 
+    }
 
     .product-text {
         width: 241px;
+        font-size: 16px;
         padding-bottom: 62px;
     }
 

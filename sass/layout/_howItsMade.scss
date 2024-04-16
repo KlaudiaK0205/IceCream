@@ -1,15 +1,10 @@
 .howItsMade {
     background-color: var(--howItsMadeBg);
-    background-image: url(/images/desktop/howItsMade/sectionbg_desktop@1x.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 100% 46%; //poprawić
 }
 
 .howItsMade-box {
     display: block;
     justify-content: center;
-
 }
 
 .howItsMade .section-title {
@@ -28,13 +23,20 @@
     margin: 0 auto;
 }
 
+.howItsMade-undertitle,
+.howItsMade-text {
+    font-size: 12px;
+    line-height: 1.6;
+}
+
 .howItsMade-undertitle {
+    color: var(--undertitleColor); 
     padding: 46px 0;
 }
 
 .howItsMade-text {
-    padding-bottom: 17px;
-    
+    color: var(--textColor);
+    padding-bottom: 20px;
 }
 
 .advantages__list {
@@ -77,12 +79,8 @@
 }
 
 @media screen and (min-width: 768px) {
-    .howItsMade {
-        background-position: 100% 95%;
-    }
-
     .howItsMade .section-title {
-        width: 429px;
+        width: 450px;
         margin-bottom: 50px;
     }
 
@@ -105,8 +103,14 @@
         width: 340px;
     }
 
+    .howItsMade-undertitle,
+    .howItsMade-text {
+    font-size: 14px;
+    }
+
     .howItsMade-undertitle {
-        padding: 50px 0;
+        padding-top: 50px;
+        padding-bottom: 30px;
     }
 
     .howItsMade-text {
@@ -138,8 +142,10 @@
 
 @media screen and (min-width: 1200px) {
     .howItsMade {
+        background-image: url(/images/desktop/howItsMade/sectionbg_desktop@1x.png);
         background-size: contain;
-        background-position: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     
     .howItsMade .section-title {
@@ -160,10 +166,12 @@
     }
 
     .howItsMade-undertitle {
+        font-size: 16px;
         padding-bottom: 35px;
     }
     
     .howItsMade-text {
+        font-size: 14px;
         padding-bottom: 45px;
     }
 

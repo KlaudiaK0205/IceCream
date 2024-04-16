@@ -17,12 +17,33 @@
 }
 
 .logo-text {
+    font-family: var(--header-font);
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.1333333333;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--brandColor);
     padding-left: 10px;
 }
 
 .nav,
 .buyBtn {
     display: none;
+}
+
+.nav__link {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3125;
+    color: var(--mainColor);
+
+    &:hover,
+    :focus {
+        color: var(--brandColor);
+        animation: text-shadow-drop-center ease-in-out 800ms both;
+        transition: cubic-bezier(0.4, 0, 0.2, 1) 800ms;
+    }
 }
 
 .burger-menuBtn {
@@ -38,6 +59,10 @@
 
     .header .container {
         max-width: 768px;
+    }
+
+    .logo-text {
+        font-size: 30px;
     }
 
     .nav {
@@ -63,6 +88,10 @@
 
     .header .container {
         max-width: 1280px;
+    }
+
+    .logo-text {
+        font-size: 35px;
     }
 
     .nav {

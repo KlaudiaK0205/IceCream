@@ -1,14 +1,17 @@
 .gallery {
-    background-image: linear-gradient(180deg, var(--howItsMadeBg) 25%, var(--mainColor) 0);
+    background-image: linear-gradient(180deg, var(--howItsMadeBg) 40%, var(--mainColor) 0);
 }
 
 .gallery-img {
     width: 100%;
     height: 100%;
+    border-radius: 22px;
 
     &:hover,
     :focus {
-        transform: scale(1);
+        position: relative;
+        z-index: 1;
+        transform: scale(1.2);
         transition: .5s cubic-bezier(.4,0,.2,1);
     }
 }
@@ -32,7 +35,6 @@
     grid-area: gallery-grid__item-2;
     position: relative;
     top: 20px;
-    
 }
 
 .gallery-grid__item-3 { 

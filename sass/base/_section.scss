@@ -1,3 +1,45 @@
 .section {
-    padding: 120px 0;
+    padding: 100px 0;
+}
+
+.section-title {
+    font-family: var(--header-font);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.138;
+    text-transform: uppercase;
+    color: var(--circleColor);
+}
+
+.highlighted-word-section {
+    font-family: var(--header-font);
+    font-size: 34px;
+    line-height: 1.067;
+    letter-spacing: .04em;
+    color: var(--brandColor);
+    animation: glow 1.5s infinite alternate;
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        padding: 120px 0;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .highlighted-word-section {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section-title {
+        font-size: 30px;
+    }
+
+    .highlighted-word-section {
+        font-size: 58px;
+    }
 }

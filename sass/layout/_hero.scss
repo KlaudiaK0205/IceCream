@@ -15,8 +15,23 @@
 
 .hero-title {
     width: 218px;
+    font-family: var(--header-font);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.154;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--mainColor);
     padding-top: 137px;
     }
+
+.highlighted-word {
+    font-family: var(--header-font);
+    font-size: 48px;
+    line-height: 1.067;
+    color: var(--brandColor);
+    animation: glow 1.5s infinite alternate;
+}
 
 .heroBtn__list {
     position: relative;
@@ -32,6 +47,9 @@
 
 .productsBtn,
 .how-its-madeBtn {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
     padding: 7px 14px;
 }
 
@@ -66,8 +84,15 @@
 @media screen and (min-width: 768px) {
     .hero-title {
         width: 162px;
+        font-size: 22px;
+        line-height: 1.14;
         padding-top: 15px;
         }
+
+    .highlighted-word {
+        font-size: 34px;
+        letter-spacing: .03em;
+    }
 
     .heroBtn__list {
         padding: 20px 0;
@@ -104,6 +129,11 @@
 
     .eco-text {
         width: 114px;
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: .03em;
+        color: var(--mainColor);
         padding-top: 47px;
     }
 
@@ -131,6 +161,12 @@
 
     .counter-number {
         display: flex;
+        font-family: var(--header-font);
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 1.15;
+        letter-spacing: .03em;
+        color: var(--brandColor);
     }
 
     .counter-number::before {
@@ -142,6 +178,12 @@
         height: 15px;
         background-color: var(--mainColor);
         border-radius: 50%;        
+    }
+
+    .counter-name1,
+    .counter-name2 {
+        font-size: 8px;
+        color: var(--mainColor);
     }
 
     .counter-name1 {
@@ -168,8 +210,13 @@
 @media screen and (min-width: 1200px) {
     .hero-title {
         width: 277px;
+        font-size: 38px;
         padding-top: 89px;
         }
+
+    .highlighted-word {
+        font-size: 58px;
+    }
 
     .heroBtn__list {
         padding: 25px 0 58px 0;
@@ -196,6 +243,7 @@
 
     .eco-text {
         width: 200px;
+        font-size: 14px;
         padding-top: 56px;
         margin-left: 20px;
     }
@@ -217,10 +265,19 @@
         margin-right: 10px;
     }
 
-    .counter-number::before {
-        right: -5px;
-        width: 25px;
-        height: 25px;       
+    .counter-number {
+        font-size: 46px;
+    
+        &::before {
+            right: -5px;
+            width: 25px;
+            height: 25px;       
+        }
+    }
+
+    .counter-name1,
+    .counter-name2 {
+        font-size: 14px;
     }
 
     .counter-name1 {
