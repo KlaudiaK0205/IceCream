@@ -27,11 +27,6 @@ a {
   text-decoration: none;
 }
 
-a:link,
-a:visited {
-  color: var(--mainColor);
-}
-
 p {
   margin: 0;
   padding: 0;
@@ -1056,12 +1051,12 @@ button {
   font-weight: 700;
   line-height: 1.3125;
   color: var(--mainColor);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 800ms;
 }
 .nav__link:hover,
 .nav__link :focus {
   color: var(--brandColor);
   animation: text-shadow-drop-center ease-in-out 800ms both;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 800ms;
 }
 
 .burger-menuBtn {
@@ -1448,13 +1443,13 @@ button {
   animation: pulsate-fwd 0.5s ease-in-out infinite both;
 }
 .advantages__item:nth-child(1)::before {
-  background-image: url(/images/mobile/advantages-icon1.svg);
+  background-image: url(../images/mobile/advantages-icon1.svg);
 }
 .advantages__item:nth-child(2)::before {
-  background-image: url(/images/mobile/advantages-icon2.svg);
+  background-image: url(../images/mobile/advantages-icon2.svg);
 }
 .advantages__item:nth-child(3)::before {
-  background-image: url(/images/mobile/advantages-icon3.svg);
+  background-image: url(../images/mobile/advantages-icon3.svg);
 }
 
 .advantages-number {
@@ -1517,11 +1512,18 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .howItsMade {
-    background-image: url(/images/desktop/howItsMade/sectionbg_desktop@1x.png);
+    background-image: url(../images/desktop/howItsMade/sectionbg_desktop@1x.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
   }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .howItsMade {
+    background-image: url(../images/desktop/howItsMade/sectionbg_desktop@2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
   .howItsMade .section-title {
     width: 534px;
     margin-bottom: 55px;
@@ -1719,10 +1721,17 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .locations {
-    background-image: url(/images/desktop/locations/sectionbg_desktop@1x.png), linear-gradient(var(--mainColor) 100px, var(--howItsMadeBg) 0, var(--howItsMadeBg) 851px);
+    background-image: url(../images/desktop/locations/sectionbg_desktop@1x.png), linear-gradient(var(--mainColor) 100px, var(--howItsMadeBg) 0, var(--howItsMadeBg) 851px);
     background-position: 50%;
     background-position-y: 80px, 0;
   }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .locations {
+    background-image: url(../images/desktop/locations/sectionbg_desktop@2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
   .locations__list {
     display: flex;
     gap: 31px;
@@ -1841,7 +1850,12 @@ button {
   box-shadow: 0px 0px 15px 10px rgba(255, 184, 202, 0.55);
 }
 .products__item:nth-child(1)::before {
-  background-image: url(/images/desktop/products/icecream_desktop@1x.png);
+  background-image: url(../images/desktop/products/icecream_desktop@1x.png);
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products__item:nth-child(1)::before {
+    background-image: url(../images/desktop/products/icecream_desktop@2x.png);
+  }
 }
 .products__item:nth-child(2) {
   background-color: var(--iceCoffeeBg);
@@ -1851,7 +1865,12 @@ button {
   box-shadow: 0px 0px 15px 10px rgba(240, 209, 165, 0.55);
 }
 .products__item:nth-child(2)::before {
-  background-image: url(/images/desktop/products/icecoffee_desktop@1x.png);
+  background-image: url(../images/desktop/products/icecoffee_desktop@1x.png);
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products__item:nth-child(2)::before {
+    background-image: url(../images/desktop/products/icecoffee_desktop@2x.png);
+  }
 }
 .products__item:nth-child(3) {
   background-color: var(--milkshakesBg);
@@ -1861,7 +1880,12 @@ button {
   box-shadow: 0px 0px 15px 10px rgba(194, 226, 151, 0.55);
 }
 .products__item:nth-child(3)::before {
-  background-image: url(/images/desktop/products/milkshakes_desktop@1x.png);
+  background-image: url(../images/desktop/products/milkshakes_desktop@1x.png);
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products__item:nth-child(3)::before {
+    background-image: url(../images/desktop/products/milkshakes_desktop@2x.png);
+  }
 }
 
 .product-name {
@@ -2002,7 +2026,7 @@ button {
   left: -50px;
   width: 54px;
   height: 40px;
-  content: url(/images/mobile/reviews/quotemark.png);
+  content: url(../images/mobile/reviews/quotemark.png);
 }
 
 .customer-review-text {
@@ -2036,7 +2060,7 @@ button {
 }
 
 .slick-dots li.slick-active button:before {
-  background: url(/images/mobile/reviews/house.svg) no-repeat;
+  background: url(../images/mobile/reviews/house.svg) no-repeat;
   opacity: 1;
   color: var(--brandColor);
 }

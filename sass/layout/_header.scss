@@ -37,12 +37,12 @@
     font-weight: 700;
     line-height: 1.3125;
     color: var(--mainColor);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 800ms;
 
     &:hover,
     :focus {
         color: var(--brandColor);
         animation: text-shadow-drop-center ease-in-out 800ms both;
-        transition: cubic-bezier(0.4, 0, 0.2, 1) 800ms;
     }
 }
 

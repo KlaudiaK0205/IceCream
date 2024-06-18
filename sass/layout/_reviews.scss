@@ -26,7 +26,7 @@
         left: -50px;
         width: 54px;
         height: 40px;
-        content: url(/images/mobile/reviews/quotemark.png);
+        content: url(../images/mobile/reviews/quotemark.png);
     }
 }
 
@@ -63,7 +63,7 @@
 }
 
 .slick-dots li.slick-active button:before {
-    background: url(/images/mobile/reviews/house.svg) no-repeat;
+    background: url(../images/mobile/reviews/house.svg) no-repeat;
     opacity: 1;
     color: var(--brandColor);
 }

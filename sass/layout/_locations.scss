@@ -183,10 +183,13 @@
 
 @media screen and (min-width: 1200px) {
     .locations {
-        background-image: url(/images/desktop/locations/sectionbg_desktop@1x.png),
+        background-image: url(../images/desktop/locations/sectionbg_desktop@1x.png),
         linear-gradient(var(--mainColor) 100px,var(--howItsMadeBg) 0, var(--howItsMadeBg) 851px);
         background-position: 50%;
         background-position-y: 80px, 0;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/desktop/locations/sectionbg_desktop@2x.png);
+        }
     }
 
     .locations__list {
